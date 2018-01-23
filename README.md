@@ -3,3 +3,4 @@
 An iOS color picker built in Objective-C.
 
 ![screenshot.png](https://github.com/passpier/VCColorWheel/blob/master/colorwheel_screenshot.png)
+![demo.gif](https://github.com/passpier/VCColorWheel/blob/master/colorwheel_demo.gif)
