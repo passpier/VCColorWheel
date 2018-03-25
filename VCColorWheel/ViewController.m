@@ -22,6 +22,10 @@
     // Do any additional setup after loading the view, typically from a nib.
     VCColorWheelView *colorWheelView = [[VCColorWheelView alloc] init];
     colorWheelView.delegate = self;
+    CGRect screenRect = [[UIScreen mainScreen] bounds];
+    CGFloat x = screenRect.size.width * 0.5;
+    CGFloat y = screenRect.size.height * 0.5;
+    colorWheelView.center = CGPointMake(x, y);
     [_displayView addSubview:colorWheelView];
 }
 

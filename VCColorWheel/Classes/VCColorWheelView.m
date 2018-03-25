@@ -41,18 +41,19 @@ static NSString *const animPosition = @"position";
         CGRect frame = CGRectMake(0, 0, COLOR_WHEEL_WIDTH, COLOR_WHEEL_HEIGHT);
         self.frame = frame;
         //self.backgroundColor = [UIColor whiteColor];
-        [self initContentViewWithFrame:frame];
+        [self initContentView];
         [self addSingleTapGestureRecognizer];
         _colorWheelState = VCColorWheelStateChangePosition;
     }
     return self;
 }
 
-- (void)initContentViewWithFrame:(CGRect)frame {
-    _colorPickerView = [[VCColorPickerView alloc] initWithFrame:frame];
+- (void)initContentView {
+    CGRect pickerFrame = CGRectMake(0, 0, COLOR_WHEEL_WIDTH, COLOR_WHEEL_HEIGHT);
+    _colorPickerView = [[VCColorPickerView alloc] initWithFrame:pickerFrame];
     _colorPickerView.tag = colorPickerViewTag;
     // Make view smaller for user touch interaction
-    CGRect selectedFrame = CGRectMake(40, 40, frame.size.width - 80, frame.size.height - 80);
+    CGRect selectedFrame = CGRectMake(40, 40, COLOR_WHEEL_WIDTH - 80, COLOR_WHEEL_HEIGHT - 80);
     _colorSelectedView = [[VCColorSelectedView alloc] initWithFrame:selectedFrame];
     _colorSelectedView.tag = colorSelectedViewTag;
     [self addSubview:_colorPickerView];
