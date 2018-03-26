@@ -12,6 +12,11 @@ Import `VCColorWheelView.h` to your project.
 VCColorWheelView *colorWheelView = [[VCColorWheelView alloc] init];
 [self.view addSubview:colorWheelView];
 ```
+Get selected color
+
+```objective-c
+UIColor *color = colorWheelView.selectedColor;
+```
 
 Result:
 
