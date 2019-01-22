@@ -1,0 +1,6 @@
+framework module VCColorWheel {
+  umbrella header "VCColorWheel-umbrella.h"
+
+  export *
+  module * { export * }
+}

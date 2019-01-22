@@ -79,11 +79,11 @@ static NSString *const animPosition = @"position";
         CABasicAnimation *showPickerAnim = [self animationForShowingFrom:@0 to:@80 withKey:animLineWidth];
         CABasicAnimation *showBorderSecondAnim = [self animationForShowingFrom:@100 to:@180 withKey:animLineWidth];
         CABasicAnimation *showArrowAnim = [self animationForShowingFrom:@(CGPointMake(20,0)) to:@(CGPointMake(80,0)) withKey:animPosition];
-        for (CAShapeLayer *subLayer in _colorPickerView.colorPickerCircle.sublayers) {
+        for (CAShapeLayer *subLayer in self->_colorPickerView.colorPickerCircle.sublayers) {
             [subLayer addAnimation:showPickerAnim forKey:@"hidePickerAnim"];
         }
-        [_colorPickerView.borderCircle addAnimation:showBorderSecondAnim forKey:@"showBorderSecondAnim"];
-        [_colorSelectedView.arrow addAnimation:showArrowAnim forKey:@"showArrowAnim"];
+        [self->_colorPickerView.borderCircle addAnimation:showBorderSecondAnim forKey:@"showBorderSecondAnim"];
+        [self->_colorSelectedView.arrow addAnimation:showArrowAnim forKey:@"showArrowAnim"];
         self.userInteractionEnabled = YES;
     }];
     [_colorSelectedView.borderCircle addAnimation:didSelectedAnim forKey:@"didSelectedAnim"];
@@ -101,8 +101,8 @@ static NSString *const animPosition = @"position";
         // Step 2 animation
         CABasicAnimation *notSelectedAnim = [self animationForHidingFrom:@80 to:@0 withKey:animLineWidth];
         CABasicAnimation *hideBorderSecondAnim = [self animationForHidingFrom:@100 to:@0 withKey:animLineWidth];
-        [_colorSelectedView.borderCircle addAnimation:notSelectedAnim forKey:@"notSelectedAnim"];
-        [_colorPickerView.borderCircle addAnimation:hideBorderSecondAnim forKey:@"hideBorderSecondAnim"];
+        [self->_colorSelectedView.borderCircle addAnimation:notSelectedAnim forKey:@"notSelectedAnim"];
+        [self->_colorPickerView.borderCircle addAnimation:hideBorderSecondAnim forKey:@"hideBorderSecondAnim"];
         self.userInteractionEnabled = YES;
     }];
     for (CAShapeLayer *subLayer in _colorPickerView.colorPickerCircle.sublayers) {

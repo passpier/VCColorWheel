@@ -1,0 +1,16 @@
+PODS:
+  - VCColorWheel (0.1.0)
+
+DEPENDENCIES:
+  - VCColorWheel (from `../`)
+
+EXTERNAL SOURCES:
+  VCColorWheel:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  VCColorWheel: 536b233c3b0f3d01b4f495a6e21bb695a49aefac
+
+PODFILE CHECKSUM: eb757aa5326a51a08b6b2a92d4e83a19389167dc
+
+COCOAPODS: 1.5.3

@@ -1,0 +1,22 @@
+{
+  "name": "VCColorWheel",
+  "version": "0.1.0",
+  "summary": "A short description of VCColorWheel.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/vincent.cheng/VCColorWheel",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "vincent.cheng": "vincent.cheng@rdgroup.com.tw"
+  },
+  "source": {
+    "git": "https://github.com/vincent.cheng/VCColorWheel.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "VCColorWheel/Classes/**/*"
+}
