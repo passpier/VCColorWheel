@@ -1,6 +1,6 @@
 # VCColorWheel
 
-[![CI Status](https://img.shields.io/travis/vincent.cheng/VCColorWheel.svg?style=flat)](https://travis-ci.org/vincent.cheng/VCColorWheel)
+[![CI Status](https://img.shields.io/travis/passpier/VCColorWheel.svg?style=flat)](https://travis-ci.org/passpier/VCColorWheel)
 [![Version](https://img.shields.io/cocoapods/v/VCColorWheel.svg?style=flat)](https://cocoapods.org/pods/VCColorWheel)
 [![License](https://img.shields.io/cocoapods/l/VCColorWheel.svg?style=flat)](https://cocoapods.org/pods/VCColorWheel)
 [![Platform](https://img.shields.io/cocoapods/p/VCColorWheel.svg?style=flat)](https://cocoapods.org/pods/VCColorWheel)
