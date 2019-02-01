@@ -7,7 +7,7 @@
 
 An iOS color picker built in Objective-C.
 
-![screenshot.png](https://github.com/passpier/VCColorWheel/blob/master/Assets/colorwheel_screenshot.png)
+![screenshot.png](https://raw.githubusercontent.com/passpier/VCColorWheel/master/Assets/colorwheel_screenshot.png)
 
 ## Usage
 
@@ -25,7 +25,7 @@ UIColor *color = colorWheelView.selectedColor;
 
 Result:
 
-![demo.gif](https://github.com/passpier/VCColorWheel/blob/master/Assets/colorwheel_demo.gif)
+![demo.gif](https://raw.githubusercontent.com/passpier/VCColorWheel/master/Assets/colorwheel_demo.gif)
 
 ## Example
 
